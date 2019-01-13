@@ -1,0 +1,25 @@
+body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#e6f7ff;
+}
+
+.jumbotron {
+    background-color: #99ddff;
+    color: #fff;
+}
+
+input {
+    margin-top:5px;
+}
+
+.marginTop20 {
+    margin-top:20px;
+}
+
+.borderGray {
+    border:1px solid #d9d9d9;
+    padding:20px;
+    border-radius:6px;
+}

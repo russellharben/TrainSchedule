@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+
+    <!-- Bootstrap CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Daily Train Schedule</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Beginning of Form/Body -->
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-10">
+                        <form id="trainForm">
+
+                            <div class="form-group">
+                                <label class="formLabel">Train Name:</label>
+                                <input id="train-name" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="formLabel">Destination:</label>
+                                <input id="destination" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="formLabel">First Arrival Time:</label>
+                                <input id="first-train-time" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label class="formLabel">Frequency:</label>
+                                <input id="frequency" class="form-control" />
+                            </div>
+                            <button id="submitButton" class="btn btn-primary form-control" type="submit" value="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <div class="col-md-4 borderGray">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3 class="marginTop50">Train Arrival Information</h3>
+                        <div id="trainName" class="marginTop20"></div>
+                        <div id="trainArrival" class="marginTop20"></div>
+                        <div id="trainArrivalTime" class="marginTop20"></div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/javascript/javascript.js"></script>
+
+</body>
